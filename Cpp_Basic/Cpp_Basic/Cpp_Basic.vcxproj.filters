@@ -39,16 +39,16 @@
     <ClCompile Include="Ch05-1_example.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\Ch06_string.cpp">
+    <ClCompile Include="Ch05-2_example.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\Ch05-2_sort.cpp">
+    <ClCompile Include="Ch06_String.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\Ch07_structure.cpp">
+    <ClCompile Include="Ch06-1_example.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\Ch06-1_example.cpp">
+    <ClCompile Include="Ch07_Structure.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

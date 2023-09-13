@@ -1,18 +1,18 @@
-#include "io.h"
+ï»¿#include "io.h"
 
 void MultipleCal() {
 
     int LoopCount;
     int Value1, Value2;
 
-    cout << "¹Ýº¹ È½¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä." << endl;
+    cout << "ë°˜ë³µ íšŸìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”." << endl;
     cin >> LoopCount;
 
     for (int i = 0; i < LoopCount; i++) {
-        cout << "µÎ ¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä." << endl;
+        cout << "ë‘ ìˆ˜ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”." << endl;
         cin >> Value1;
         cin >> Value2;
-        cout << "ÇÕ: " << Value1 + Value2 << endl;
+        cout << "í•©: " << Value1 + Value2 << endl;
     }
 }
 
@@ -24,26 +24,26 @@ void Receipt() {
     int Number = 0;
     int SumPrice = 0;
 
-    cout << "±¸ÀÔ ÃÑ ±Ý¾×: ";
+    cout << "êµ¬ìž… ì´ ê¸ˆì•¡: ";
     cin >> TotalPrice;
-    cout << "¹°°ÇÀÇ Á¾·ù ¼ö: "; //¹Ýº¹È½¼ö
+    cout << "ë¬¼ê±´ì˜ ì¢…ë¥˜ ìˆ˜: "; //ë°˜ë³µíšŸìˆ˜
     cin >> Count;
 
     for (int i = 1; i <= Count; i++) {
 
-        cout << i << "¹ø ¹°°Ç °¡°Ý :";
+        cout << i << "ë²ˆ ë¬¼ê±´ ê°€ê²© :";
         cin >> Price;
-        cout << i << "¹ø ¹°°Ç °¹¼ö: ";
+        cout << i << "ë²ˆ ë¬¼ê±´ ê°¯ìˆ˜: ";
         cin >> Number;
-        cout << i << "¹ø ¹°°Ç ÃÑ°¡°Ý: " << Price * Number << endl << endl;
+        cout << i << "ë²ˆ ë¬¼ê±´ ì´ê°€ê²©: " << Price * Number << endl << endl;
 
         SumPrice += Price * Number;
     }
     if (TotalPrice == SumPrice) {
-        cout << "Yes! ¿Ã¹Ù¸¥ °è»êÀÌ¾ú´Ù." << endl;
+        cout << "Yes! ì˜¬ë°”ë¥¸ ê³„ì‚°ì´ì—ˆë‹¤." << endl;
     }
     else {
-        cout << "No! ´«ÅÊÀÌ ¸Â¾Ò´Ù." << endl;
+        cout << "No! ëˆˆíƒ±ì´ ë§žì•˜ë‹¤." << endl;
     }
 
     cout << ((TotalPrice == SumPrice) ? "YES" : "NO") << endl;

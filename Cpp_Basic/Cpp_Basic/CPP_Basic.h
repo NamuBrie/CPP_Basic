@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 void OvenTimer2();
 void OvenTimer();
@@ -23,7 +23,7 @@ void NestedStatement();
 void ForStatement();
 void WhileStatement();
 
-int GuGuDan(int Sootja); // ¸®ÅÏ°ªÀ» »ç¿ëÇÏ·Á±¸
+int GuGuDan(int Sootja); // ë¦¬í„´ê°’ì„ ì‚¬ìš©í•˜ë ¤êµ¬
 void VarScope(int Number);
 
 void MultipleCal();

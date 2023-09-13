@@ -1,4 +1,4 @@
-#include "io.h"
+ï»¿#include "io.h"
 
 void Variable() {
 
@@ -11,14 +11,14 @@ void Variable() {
 
 void VariableTypeNumber() {
 
-	//Á¤¼öÇü µ¥ÀÌÅÍ Å¸ÀÔ
+	//ì •ìˆ˜í˜• ë°ì´í„° íƒ€ì…
 	short Num1 = 10; // 2^16
 	int Num2 = 20;   // 2^32 //integer
 	long Num3 = 30;  // 2^64
 
 	cout << Num1 << Num2 << Num3 << endl;
 
-	//½Ç¼öÇü µ¥ÀÌÅÍ Á¾·ù
+	//ì‹¤ìˆ˜í˜• ë°ì´í„° ì¢…ë¥˜
 	float Num4 = 1.1;
 	float Num41 = 1.345f;
 	double Num5 = 1.5;
@@ -28,8 +28,8 @@ void VariableTypeNumber() {
 
 void VariableTypeCharacter() {
 
-	//¹®ÀÚÇü Å×ÀÌÅÍ (¹®ÀÚ 1°³ : '' / ¹®ÀÚ ¿©·¯°³ : "")
-	char Text1; // char : character (¹®ÀÚ ÇÏ³ª¸¸ ÀúÀå °¡´É)
+	//ë¬¸ìí˜• í…Œì´í„° (ë¬¸ì 1ê°œ : '' / ë¬¸ì ì—¬ëŸ¬ê°œ : "")
+	char Text1; // char : character (ë¬¸ì í•˜ë‚˜ë§Œ ì €ì¥ ê°€ëŠ¥)
 	char Text2;
 
 	Text1 = 'A';
@@ -48,7 +48,7 @@ void VariableTypeBool() {
 	Condition = false;
 	cout << Condition << endl;
 
-	// 0 => false, ±×¿Ü Á¤¼ö => true
+	// 0 => false, ê·¸ì™¸ ì •ìˆ˜ => true
 	Condition = 10;
 	cout << Condition << endl;
 
@@ -59,7 +59,7 @@ void VariableTypeBool() {
 void InputOutput() {
 
 	int number;
-	//¿ÜºÎÀÔ·Â
+	//ì™¸ë¶€ì…ë ¥
 	cin >> number;
 	cout << number << endl;
 }

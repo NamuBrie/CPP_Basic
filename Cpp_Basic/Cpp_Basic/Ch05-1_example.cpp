@@ -1,12 +1,12 @@
 ﻿#include "io.h"
-
+/*
 void CountNumber() {
 
     int Counter = 0;
     cout << "숫자 개수를 입력해주세요: ";
     cin >> Counter;
 
-    int Number[Counter];
+   // int Number[Counter];
     for (int i = 0; i < Counter; i++) 
     {
         cout << "수 데이터를 입력해주세요: ";
@@ -67,7 +67,8 @@ void MissingNumber()
     cin >> FindNumber;
 
     //전체 학생의 번호 데이터 set 초기화
-    int TotalMember[Counter];
+    int TotalMember[Counter]; //배열변수 선언시 크기 인덱스틑 변수로 지정할 수 없음
+    //C++ 컴파일 언어=> 컴파일하는 시간에 배열 크기가 결정 => 크기를 변수로 지정하면 크기를 지정할 수 없음
 
     for (int i = 0; i < Counter; i++) 
     {
@@ -116,3 +117,5 @@ void MissingNumber()
         }
     }
 }
+
+*/

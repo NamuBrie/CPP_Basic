@@ -1,16 +1,16 @@
-#include "io.h"
+ï»¿#include "io.h"
 
 void DefineArray() {
 
     //int Num = 0;
 
-    //¼±¾ð, declare(define)
+    //ì„ ì–¸, declare(define)
     int a[3] = { 1,1,1 };
     int b[10] = { 1,2 };
     //int c[3] = {1,2,3,4}; => Syntax Error
     int d[3];
 
-    //´ëÀÔ => Á¢±Ù, acess
+    //ëŒ€ìž… => ì ‘ê·¼, acess
     //d[3]={1,2,3};
     d[0] = 1;
     d[1] = 2;
@@ -20,7 +20,7 @@ void DefineArray() {
         d[i] = i + 1;
     }
 
-    //Ãâ·Â => Á¢±Ù, Acess
+    //ì¶œë ¥ => ì ‘ê·¼, Acess
     cout << endl;
 
     for (int i = 0; i < 3; i++) {
@@ -29,7 +29,7 @@ void DefineArray() {
 
     cout << endl;
 
-    //¹è¿ª °³¼ö 10°³, 13¹ø ¹Ýº¹ Ãâ·Â => 10°³¹üÀ§³Ñ¾î¼­´Â ºÎºÐÀº ¾²·¹±â °ªÀÌ Ãâ·ÂµÊ
+    //ë°°ì—­ ê°œìˆ˜ 10ê°œ, 13ë²ˆ ë°˜ë³µ ì¶œë ¥ => 10ê°œë²”ìœ„ë„˜ì–´ì„œëŠ” ë¶€ë¶„ì€ ì“°ë ˆê¸° ê°’ì´ ì¶œë ¥ë¨
     for (int i = 0; i < 13; i++) {
         cout << b[i] << " ";
 
@@ -44,7 +44,7 @@ void DefineArray() {
 }
 
 void TwoDimension() {
-    int Number[5][2] = { // [Çà][¿­]
+    int Number[5][2] = { // [í–‰][ì—´]
     {1,2},
     {3,4},
     {5,6},

@@ -1,5 +1,5 @@
-#pragma once
-// ÀÔÃâ·Â Çì´õÆÄÀÏ
+ï»¿#pragma once
+// ì…ì¶œë ¥ í—¤ë”íŒŒì¼
 
 #include <iostream>  // io=input/output stream
 using namespace std;

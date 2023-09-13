@@ -1,17 +1,17 @@
-#include "io.h"
+ï»¿#include "io.h"
 
 
 void IfStatement() {
 
     // if
     int Total = 50;
-    //ÃÑÁ¡ÀÌ 60ÀÌ»óÀÌ¸é ÇÕ°Ý Ãâ·Â
+    //ì´ì ì´ 60ì´ìƒì´ë©´ í•©ê²© ì¶œë ¥
     if (Total >= 60) {
-        cout << "ÇÕ°Ý" << endl;
+        cout << "í•©ê²©" << endl;
     }
-    //¾Æ´Ï¸é ºÒÇÕ°Ý
+    //ì•„ë‹ˆë©´ ë¶ˆí•©ê²©
     else {
-        cout << "ºÒÇÕ°Ý" << endl;
+        cout << "ë¶ˆí•©ê²©" << endl;
     }
 
     int Total3 = 85;
@@ -28,25 +28,25 @@ void IfStatement() {
 
 void IfElseStatement() {
 
-    // 3°ú¸ñ Æò±ÕÁ¡¼ö°¡ 60ÀÌ»óÀÌ¸é ÇÕ°Ý, ¾Æ´Ï¸é ºÒÇÕ°Ý
-    //°¢ °ú¸ñ´ç Á¡¼ö°¡ 60¹Ì¸¸ÀÌ¸é °ú¶ô
+    // 3ê³¼ëª© í‰ê· ì ìˆ˜ê°€ 60ì´ìƒì´ë©´ í•©ê²©, ì•„ë‹ˆë©´ ë¶ˆí•©ê²©
+    //ê° ê³¼ëª©ë‹¹ ì ìˆ˜ê°€ 60ë¯¸ë§Œì´ë©´ ê³¼ë½
 
     int Subject1 = 0;
     int Subject2 = 0;
     int Subject3 = 0;
 
-    cout << "°ú¸ñ 1ÀÇ Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À : ";
+    cout << "ê³¼ëª© 1ì˜ ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹­ì‹œì˜¤ : ";
     cin >> Subject1;
 
-    cout << "°ú¸ñ 2ÀÇ Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À : ";
+    cout << "ê³¼ëª© 2ì˜ ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹­ì‹œì˜¤ : ";
     cin >> Subject2;
 
-    cout << "°ú¸ñ 3ÀÇ Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À : ";
+    cout << "ê³¼ëª© 3ì˜ ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹­ì‹œì˜¤ : ";
     cin >> Subject3;
 
     int Average = (Subject1 + Subject2 + Subject3) / 3;
 
-    //Æò±Õ, °ú¸ñ´ç Á¡¼ö ¸ðµÎ 60ÀÌ»óÀÌ¸é ÇÕ°Ý
+    //í‰ê· , ê³¼ëª©ë‹¹ ì ìˆ˜ ëª¨ë‘ 60ì´ìƒì´ë©´ í•©ê²©
     if (Average >= 60 && Subject1 >= 60 && Subject2 >= 60 && Subject3 >= 60) {
         cout << "Pass" << endl;
 
@@ -73,7 +73,7 @@ void IfElseStatement() {
 
 void SwitchStatement() {
 
-    //°ú¸ñ¹øÈ£: 1-C++, 2-¾ð¸®¾ó¿£Áø, 3-VR
+    //ê³¼ëª©ë²ˆí˜¸: 1-C++, 2-ì–¸ë¦¬ì–¼ì—”ì§„, 3-VR
 
     int SubjectNumber = 0;
     cout << "insert the number of Subject : ";
@@ -103,18 +103,18 @@ void NestedStatement() {
 
     if (a < b) {
         if (b < c) {
-            cout << "ÁßÃ¸ IF" << endl;
+            cout << "ì¤‘ì²© IF" << endl;
         }
     }
 
     if (a < b && b < c) {
-        cout << "AND ¿¬»ê IF" << endl;
+        cout << "AND ì—°ì‚° IF" << endl;
     }
 }
 
 void ForStatement() {
 
-    // integer, iterate(iterable) : ¹Ýº¹ÇÏ´Ù
+    // integer, iterate(iterable) : ë°˜ë³µí•˜ë‹¤
     for (int i = 0; i < 10; i++) {
         // cout << i << endl;
     }
@@ -196,7 +196,7 @@ int GuGuDan(int Sootja) {
 }
 
 
-//Àü¿ªº¯¼ö (Global Scope)
+//ì „ì—­ë³€ìˆ˜ (Global Scope)
 int GlobalValue = 10;
 
 void VarScope(int Number) {
@@ -206,14 +206,14 @@ void VarScope(int Number) {
     if (true) {
 
         int BlockValue = 30;
-        cout << "Àü¿ªº¯¼ö °ª: " << GlobalValue << endl;
-        cout << "ÇÔ¼öÁö¿ªº¯¼ö °ª: " << FunctionValue << endl;
-        cout << "ºí·Ïº¯¼ö °ª: " << BlockValue << endl;
-        cout << "ÆÄ¶ó¹ÌÅÍ °ª: " << Number << endl;
+        cout << "ì „ì—­ë³€ìˆ˜ ê°’: " << GlobalValue << endl;
+        cout << "í•¨ìˆ˜ì§€ì—­ë³€ìˆ˜ ê°’: " << FunctionValue << endl;
+        cout << "ë¸”ë¡ë³€ìˆ˜ ê°’: " << BlockValue << endl;
+        cout << "íŒŒë¼ë¯¸í„° ê°’: " << Number << endl;
     }
 
-    cout << "Àü¿ªº¯¼ö °ª: " << GlobalValue << endl;
-    cout << "ÇÔ¼öÁö¿ªº¯¼ö °ª: " << FunctionValue << endl;
-    // cout << "ºí·Ïº¯¼ö °ª: " << BlockValue << endl;
-    cout << "ÆÄ¶ó¹ÌÅÍ °ª: " << Number << endl;
+    cout << "ì „ì—­ë³€ìˆ˜ ê°’: " << GlobalValue << endl;
+    cout << "í•¨ìˆ˜ì§€ì—­ë³€ìˆ˜ ê°’: " << FunctionValue << endl;
+    // cout << "ë¸”ë¡ë³€ìˆ˜ ê°’: " << BlockValue << endl;
+    cout << "íŒŒë¼ë¯¸í„° ê°’: " << Number << endl;
 }
