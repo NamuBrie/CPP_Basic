@@ -47,3 +47,5 @@ void IndexChar();
 void AlphaNumber();
 
 void Test1();
+
+void PointerDefine();
