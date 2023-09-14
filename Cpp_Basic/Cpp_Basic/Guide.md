@@ -1,26 +1,29 @@
-﻿프로그래밍(네이밍) 표기법
-* 프로그래밍 언어에서는 대소문자 구분
-* 가독성과 연관
-* 변수, 함수, 클래스 등의 이름 정할 때 여러 개의 영단어를 사용할 때 각각의 단어를 구분
-* 일반적인 문장 : unreal engine function variable
+﻿# 프로그래밍(네이밍) 표기법
+
+- 프로그래밍 언어에서는 대소문자 구분
+- 가독성과 연관
+- 변수, 함수, 클래스 등의 이름 정할 때 여러 개의 영단어를 사용할 때 각각의 단어를 구분
+
+#### 일반적인 문장 : unreal engine function variable
 
 - Snake Case : unreal_engine_function_variable
 - Kebab Case : unreal-engine-function-variable
 - Camel Case : unrealenginefunctionvariable
 - Pascal Case : UnrealEngineFunctionVariable
 
-명령어, 예약어
+## 명령어, 예약어
+
 - C++에서 명령어로 사용되기로 정해져 있는 구문
 - 변수, 함수의 이름을 명명할 때 예약어와 중복되지 않도록 이름을 명명해야 함
 
-주석
-- 실행되지 않는 설명 부분
+##### 주석
+    - 실행되지 않는 설명 부분
 
-데이터 종류
-- 숫자
-  - 정수형 타입
-  - 실수형 타입
-- 문자
+##### 데이터 종류
+    - 숫자
+     - 정수형 타입
+     - 실수형 타입
+    - 문자
 
 bit, byte
 8개의 bit가 모여 1byte (8bit = 1byte)
@@ -162,3 +165,93 @@ void Function(para) <= parameter
 
 함수 호출
 Function(10); <= 10: 실제 매개변수 (argument)
+
+# 클래스
+
+- 객체 지향 프로그램의 대표적인 기법
+- 구조체로부터 업그레이드된 기법
+  - 구조체 : 변수만으로 집합체를 구성할 수 있음
+  - 클래스 : 변수와 함수로 구성된 집합체
+
+- 객체지향 프로그래밍의 특징
+    - 추상화
+    - 캡슐화
+    - 정보 은닉
+    - 상속성
+    - 다형성
+
+- 클래스의 구성
+    -변수 : 멤버 변수 / 프로퍼티(속성, 구성원)
+    -함수 : 멤버 함수 / 메소드
+
+- 클래스의 의미
+  - 클래스
+    - 설계도
+
+  - 객체 / 인스턴스
+    - 클래스를 통해서 생성된 실체
+
+### 선언
+#### 구조체 선언
+```
+struct Car
+{
+    char name[30];
+    char model[30];
+    int year;
+    float TireSize;
+    char color[30];
+}
+   
+void Drive(){}
+void Break(){}
+void Parking(){}
+void Rear(){}
+
+ Car Sonata;
+
+ cout << Sonata.year << endl;
+
+ Sonata.Drive();
+
+ Car BMW = { "X7", "xDrive40i" , 2023 , 23.1 , "Black" }
+ Car Jeep = { "Rubicon", "Mountain" , 2021, 26, "Blue" }
+
+ cout << BMW.year << endl;
+
+ cout << Jeep
+
+ Drive("X7");
+ Drive("Rubicon");
+
+```
+
+#### 클래스 선언
+```
+class Car
+{
+    char name[30];
+    char model[30];
+    int Year;
+    float TireSize;
+    char color[30];
+
+
+    void Drive(char name[30]){}
+    void Break(char name[30]){}
+    void Parking(char name[30]){}
+    void Rear(char name[30]){}
+}
+```
+
+## 생성자(Constructor)와 소멸자(Destructor)
+
+### 생성자
+
+  -클래스 타입의 변수가 생성될 때 초기호하는 함수
+  -초기화 기능 / 초기화가 진행될 때 연계해서 다른 기능 동작
+
+### 소멸자
+
+  -클래스 쓰임새가 다 했거나 프로그램 종료시 생성되었던 클래스를 해제하는 함수
+  -소멸 기능 / 클래스 소멸이 진행된 후 연계해서 다른 기능 동작

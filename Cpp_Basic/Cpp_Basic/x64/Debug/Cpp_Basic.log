@@ -1,2 +1,6 @@
-﻿  MiniProject.cpp
+﻿  Ch10_Class.cpp
+C:\Users\user\Cpp_PL\CPP_Basic\Cpp_Basic\Cpp_Basic\Ch10_Class.h(10,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Cpp_Basic.cpp
+C:\Users\user\Cpp_PL\CPP_Basic\Cpp_Basic\Cpp_Basic\Ch10_Class.h(10,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
   Cpp_Basic.vcxproj -> C:\Users\user\Cpp_PL\CPP_Basic\Cpp_Basic\x64\Debug\Cpp_Basic.exe

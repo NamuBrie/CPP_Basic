@@ -2,11 +2,15 @@
 //
 #include "CPP_Basic.h"
 #include "io.h"
-#include <iostream>
+#include  "Ch10_Class.h"
 
 int main()
 {
-	MinMaxNum();
+	Car Sonata(80);
+
+	Sonata.DriveVelocity();
+	Sonata.DriveTime();
+	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
