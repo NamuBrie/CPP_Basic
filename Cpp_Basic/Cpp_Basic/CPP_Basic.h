@@ -46,6 +46,13 @@ void CallByValue();
 void IndexChar();
 void AlphaNumber();
 
-void Test1();
-
 void PointerDefine();
+
+void DynamicVariable();
+
+void BallInsert();
+void BallSwap();
+
+
+
+void MinMaxNum();

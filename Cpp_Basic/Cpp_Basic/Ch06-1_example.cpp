@@ -10,10 +10,11 @@ void IndexChar() {
     cout << "몇 번째 글자를 찾으실래요? ";
     cin >> number;
     cout << Word[number - 1];
-
 }
-/*
+
+
 void AlphaNumber() {
+
     char Word[20];
     int WordSize = sizeof(Word) - 1;
 
@@ -23,17 +24,18 @@ void AlphaNumber() {
     char Alpha[] = "abcdefghijklmnopqrstuvwxyz";
     int AlphaSize = sizeof(Alpha) - 1; // \0 자리 빼주기
 
-    int Check[AlphaSize];
+    int* pCheck = new int[AlphaSize];
+    //int Check[AlphaSize];
     for (int i = 0; i < AlphaSize; i++) {
-        Check[i] = -1;
+        pCheck[i] = -1;
     }
 
     for (int i = 0; i < WordSize; i++) {
         for (int k = 0; k < AlphaSize; k++) {
 
             if (Word[i] == Alpha[k]) {
-                if (Check[k] == -1) {
-                    Check[k] = i;
+                if (pCheck[k] == -1) {
+                    pCheck[k] = i;
                 }
             }
         }
@@ -43,9 +45,8 @@ void AlphaNumber() {
     cout << AlphaSize << endl;
 
     for (int i = 0; i < sizeof(Alpha) - 1; i++) {
-        cout << Check[i] << " ";
+        cout << pCheck[i] << " ";
 
     }
 }
 
-*/
