@@ -7,7 +7,7 @@ class Car
 public:
 	Car(int V)
 	{
-		Velocity = V;
+		//Velocity = V;
 	}
 	void DriveVelocity();
 	void DriveTime();
